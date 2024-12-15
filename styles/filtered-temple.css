@@ -1,0 +1,133 @@
+body {
+    font-family: 'Edu Australia VIC WA NT Hand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003058;
+    color: #ededed;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav.show {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #ededed;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #c87100;
+}
+
+main {
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+.temple {
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #003058; /* Adding a border */
+    border-radius: 10px; /* Optional: Rounded corners */
+    padding: 10px; /* Adding some padding inside the border */
+    background-color: #f8f8f8; /* Optional: Background color for contrast */
+}
+
+
+.temple h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #001a1e;
+}
+
+.temple img {
+    width: 80%;
+    height: auto;
+}
+
+.temple figcaption {
+    margin-top: 3px;
+    font-size: 0.8em;
+}
+
+.temple .label {
+    color: #003058;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #001a1e;
+    color: #ededed;
+    text-align: center;
+    padding: 10px;
+}
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: #ededed;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .temple img {
+        width: 60%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
